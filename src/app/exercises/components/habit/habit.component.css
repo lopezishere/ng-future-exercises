@@ -1,0 +1,10 @@
+.habito {
+  padding: 24px 12px;
+  border: 1px solid var(--text-color);
+  border-radius: var(--border-radius);
+}
+
+.nombre-habito {
+  color: var(--primary-color);
+  font-weight: bold;
+}
