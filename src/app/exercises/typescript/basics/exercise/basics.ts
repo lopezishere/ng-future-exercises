@@ -1,4 +1,4 @@
-//tslint: disable
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const foo: string = 'foo'
 const bar: number = 1
 const baz: boolean = true
