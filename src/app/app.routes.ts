@@ -5,6 +5,11 @@ import { FilesDistributionPage } from './exercises/components/files-distribution
 import { HabitsListPage } from './exercises/components/habits-list/page/habits-list.page'
 import { IfExercisePage } from './exercises/components/if/page/if-exercise.page'
 import { FormsPage } from './exercises/components/forms/page/forms.page'
+import { CustomPropertiesPage } from './exercises/css/custom-properties/page/custom-properties.page'
+import { ContentProjectionPage } from './exercises/components/content-projection/page/content-projection.page'
+import { ContentProjectionMultiPage } from './exercises/components/content-projection-multi/page/content-projection-multi.page'
+import { AttributeBindingPage } from './exercises/components/attribute-binding/page/attribute-binding.page'
+import { OutputPage } from './exercises/components/output/page/output-parent.page'
 
 export const routes: Routes = [
   {
@@ -23,6 +28,11 @@ export const routes: Routes = [
     component: EventExercisePage,
   },
   {
+    title: 'Attribute binding',
+    path: 'attribute-binding',
+    component: AttributeBindingPage,
+  },
+  {
     title: 'Habits List',
     path: 'habits-list',
     component: HabitsListPage,
@@ -36,6 +46,26 @@ export const routes: Routes = [
     title: 'Reactive Forms',
     path: 'reactive-forms',
     component: FormsPage,
+  },
+  {
+    title: 'Content Projection',
+    path: 'content-projection',
+    component: ContentProjectionPage,
+  },
+  {
+    title: 'Content Projection',
+    path: 'content-projection-multi',
+    component: ContentProjectionMultiPage,
+  },
+  {
+    title: 'Output',
+    path: 'output',
+    component: OutputPage,
+  },
+  {
+    title: 'Custom Properties',
+    path: 'custom-properties',
+    component: CustomPropertiesPage,
   },
   {
     title: 'Hello World',
