@@ -63,14 +63,32 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   output: {
     prev: 'content-projection-multi',
-    next: 'custom-properties',
+    next: 'signals',
     link: 'output',
     title: 'Ejercicio 10. Output',
   },
-  'custom-properties': {
+  signals: {
     prev: 'output',
+    next: 'signals-computed',
+    link: 'signals',
+    title: 'Ejercicio 11. Signals (writable signals)',
+  },
+  'signals-computed': {
+    prev: 'signals',
+    next: 'signals-effect',
+    link: 'signals-computed',
+    title: 'Ejercicio 12. Computed Signals (read-only signals)',
+  },
+  'signals-effect': {
+    prev: 'signals-computed',
+    next: 'custom-properties',
+    link: 'signals-effect',
+    title: 'Ejercicio 13. Signals Effect',
+  },
+  'custom-properties': {
+    prev: 'signals-computed',
     next: null,
     link: 'custom-properties',
-    title: 'Ejercicio 11. Custom Properties.',
+    title: 'Ejercicio 14. Custom Properties.',
   },
 }
