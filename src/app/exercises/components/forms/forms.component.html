@@ -1,0 +1,25 @@
+<h3 class="titulo">Crear Hábito</h3>
+<form [formGroup]="formulario" class="formulario" (ngSubmit)="crearHabito()">
+<label for="nombre">Nombre</label>
+<input id="nombre" type="text" formControlName="nombre">
+@if(mensajeError.length !== 0){
+    <p class="error">{{ mensajeError }}</p>
+}
+           
+<button type="submit" class="boton">Crear</button>
+</form>
+
+<h3 class="titulo">Tus Hábitos</h3>
+
+@if(habitos.length === 0) {
+    <p>No hay hábitos creados</p>
+}@else{
+    <ul class="habitos">
+    @for(habito of habitos; track $index){
+        <li class="habito">
+            {{ habito.nombre }}
+            <span class="fecha">{{ habito.fecha }}</span>
+        </li>
+    }
+    </ul>
+}

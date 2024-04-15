@@ -1,0 +1,32 @@
+.titulo {
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.boton {
+  padding: 12px 24px;
+  max-width: max-content;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  background: var(--accent-color);
+  color: var(--bg-color);
+  outline: none;
+  transition: 200ms ease;
+}
+
+.habito {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fecha {
+  text-align: right;
+}
