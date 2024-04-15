@@ -8,5 +8,5 @@ import { Component, input } from '@angular/core'
   imports: [],
 })
 export class HabitComponent {
-  texto = input<string>('Unknown')
+  texto = input<string>('Unknown') // Valor por defecto 'Unknown'
 }

@@ -1,3 +1,11 @@
 :host {
   display: block;
 }
+
+.empieza-por-a {
+  color: red;
+}
+
+.longitud-5 {
+  background-color: yellow;
+}
