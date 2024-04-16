@@ -1,10 +1,9 @@
 import { formatDate } from '@angular/common'
 import { Component } from '@angular/core'
-import { FormBuilder, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
+import { FormControl, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
 
 interface CreateHabit {
-  nombre: string
-  fecha: Date
+  nombre: FormControl<string>
 }
 
 //type CreteHabitFormModel = FormModel<CreateHabit>
