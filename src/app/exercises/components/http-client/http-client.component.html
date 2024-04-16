@@ -1,0 +1,11 @@
+<button type="submit" (click)="getPosts()">Get articulos</button>
+<button type="submit" (click)="creaPost()">Crear</button>
+<button type="submit" (click)="generaError()">Error</button>
+@if(articulos.length >= 0){
+    @for (articulo of articulos; track $index) {
+        <p>{{articulo.id}} | {{ articulo.title}}</p>
+    }
+}
+@if(articuloCreado !== undefined){
+    <p>{{ articuloCreado | json }}</p>
+}
