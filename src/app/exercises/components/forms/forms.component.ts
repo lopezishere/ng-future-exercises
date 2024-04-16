@@ -25,14 +25,14 @@ export class FormsComponent {
 
   /* API FormBuilder - Recomendada */
   // Al poner nonNullable, todas las variables generadas no podrán ser nulas
-  fb = new FormBuilder().nonNullable
-  formulario = this.fb.group({
+  constructor(private readonly formBuilder: NonNullableFormBuilder) {}
+  formulario = this.formBuilder.group({
     nombre: ['', [Validators.required, Validators.minLength(2)]],
   })
 
   /* API Form Groups  
   formulario =  new FormGroup({    
-    nombre: new FormControl('', [Validators.required, Validators.min(2)])
+    nombre: new FormControl('', {validators: [Validators.required, Validators.min(2)], nonNullable: true})
   })
   */
 
