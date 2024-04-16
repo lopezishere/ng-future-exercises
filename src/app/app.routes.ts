@@ -13,6 +13,10 @@ import { OutputPage } from './exercises/components/output/page/output-parent.pag
 import { SignalsPage } from './exercises/components/signals/page/signals.page'
 import { SignalsComputedPage } from './exercises/components/signals-computed/page/signals-computed.page'
 import { SignalsEffectPage } from './exercises/components/signals-effect/page/signals-effect.page'
+import { HttpClientPage } from './exercises/components/http-client/page/http-client.page'
+import { PipePage } from './exercises/components/pipe/page/pipe.page'
+import { RouterPage } from './exercises/components/router/page/router.page'
+import { routesOfRouterExercise } from './exercises/components/router/routes'
 
 export const routes: Routes = [
   {
@@ -84,6 +88,22 @@ export const routes: Routes = [
     title: 'Custom Properties',
     path: 'custom-properties',
     component: CustomPropertiesPage,
+  },
+  {
+    title: 'Http Client',
+    path: 'http-client',
+    component: HttpClientPage,
+  },
+  {
+    title: 'Pipes',
+    path: 'pipes',
+    component: PipePage,
+  },
+  {
+    title: 'Router',
+    path: 'router',
+    component: RouterPage,
+    children: routesOfRouterExercise,
   },
   {
     title: 'Hello World',
