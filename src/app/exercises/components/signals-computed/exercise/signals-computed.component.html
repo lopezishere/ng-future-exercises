@@ -1,0 +1,15 @@
+<h2>Incremento</h2>
+<div class="padre">
+    <button (click)="decrementar(incremento)">-</button>
+    <p>{{incremento()}}</p>
+    <button (click)="incrementar(incremento)">+</button>
+    <button (click)="reset(incremento,1)">Reset</button>
+</div>
+<h2>Contador</h2>
+<div class="padre">
+    <button (click)="decrementar(contador)">-</button>
+    <p>{{contador()}}</p>
+    <button (click)="incrementar(contador)">+</button>
+    <button (click)="reset(contador, 0)">Reset</button>
+</div>
+Doble del valor: {{dobleCont()}}
