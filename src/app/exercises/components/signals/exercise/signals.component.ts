@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, signal } from '@angular/core'
 
 @Component({
   selector: 'app-signals',
@@ -7,4 +7,18 @@ import { Component } from '@angular/core'
   standalone: true,
   imports: [],
 })
-export class SignalsComponent {}
+export class SignalsComponent {
+  contador = signal(0)
+
+  incrementar() {
+    this.contador.update(contAnt => contAnt + 1)
+  }
+
+  decrementar() {
+    this.contador.update(contAnt => contAnt - 1)
+  }
+
+  reset() {
+    this.contador.set(0)
+  }
+}
