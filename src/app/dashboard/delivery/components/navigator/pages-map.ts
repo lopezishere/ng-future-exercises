@@ -105,14 +105,26 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'signals-effect': {
     prev: 'signals-computed',
-    next: 'custom-properties',
+    next: 'signals-todo',
     link: 'signals-effect',
     title: 'Signals Effect',
   },
+  'signals-todo': {
+    prev: 'signals-effect',
+    next: 'custom-properties',
+    link: 'signals-todo',
+    title: 'Signals Todo',
+  },
   'custom-properties': {
-    prev: 'signals-computed',
-    next: null,
+    prev: 'signals-todo',
+    next: 'services',
     link: 'custom-properties',
-    title: 'Custom Properties.',
+    title: 'Custom Properties',
+  },
+  services: {
+    prev: 'custom-properties',
+    next: null,
+    link: 'services',
+    title: 'Services & InjectionToken',
   },
 }
