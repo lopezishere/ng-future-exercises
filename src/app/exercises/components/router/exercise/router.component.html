@@ -1,0 +1,12 @@
+<h2>Links:</h2>
+<ul>
+    <li><a routerLink="exercise/page">Exercise Page Link</a></li>
+    <li><a routerLink="exercise/page" [queryParams]="{ title: 'Title 1'}">Exercise Page with query param: title 1</a></li>
+    <li><a routerLink="exercise/page" [queryParams]="{ title: 'Title 2'}">Exercise Page with query param: title 2</a></li>
+    <li><a routerLink="exercise/page/123" >Destino con parametro 123</a></li>
+    <li><a [routerLink]="['exercise/page', '456']" >Destino con parametro 456 (Otra forma)</a></li>
+    <li><a routerLink="exercise/xxx" >Ruta errónea</a></li>
+    <li><button (click)="navega()" >Exercise Page Link de manera programática</button></li>
+</ul>
+<h2>Página destino seleccionada:</h2>
+<router-outlet></router-outlet>
